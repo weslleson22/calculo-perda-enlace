@@ -27,12 +27,30 @@ const CalculadoraPerdaEnlace = () => {
       <h1>Calculadora de Perda de Enlace</h1>
       <label>
         Sinal de Transmissão (Tx) em dBm:<br />
-        <input type="number"  className="centered-input" value={txSignal} onChange={(e) => setTxSignal(e.target.value)} />
+
+
+        <input
+          type="text"
+          className="centered-input"
+          value={txSignal}
+          onChange={(e) => setTxSignal(e.target.value.replace(/[^0-9.]/g, ''))}
+          pattern="[0-9.]*"
+          title="Somente números e ponto são permitidos"
+        />
+
+
       </label>
       <br />
       <label>
         Distância em quilômetros:<br />
-        <input type="number"   className="centered-input" value={distance} onChange={(e) => setDistance(e.target.value)} />
+        <input
+          type="text"
+          className="centered-input"
+          value={distance}
+          onChange={(e) => setTxSignal(e.target.value.replace(/[^0-9.]/g, ''))}
+          pattern="[0-9.]*"
+          title="Somente números e ponto são permitidos"
+        />
       </label>
       <br />
       <label>
