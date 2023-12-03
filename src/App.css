@@ -1,3 +1,8 @@
+.centered-input {
+  text-align: center;
+}
+
+
 .calculator-container {
   display: flex;
   flex-direction: column;
