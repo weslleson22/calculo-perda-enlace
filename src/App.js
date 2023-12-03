@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'; // Importe o arquivo CSS para aplicar estilos
-import Logo from './image/logo_wiki.png'
+
 const CalculadoraPerdaEnlace = () => {
   const [txSignal, setTxSignal] = useState(0);
   const [distance, setDistance] = useState(0);
@@ -21,7 +21,7 @@ const CalculadoraPerdaEnlace = () => {
 
   return (
     <div className="calculator-container">
-      <img src={Logo} alt="Logo" className="logo" />
+     
       <h1>Calculadora de Perda de Enlace</h1>
       <label>
         Sinal de Transmissão (Tx) em dBm:
